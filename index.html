@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>The Kohn Principle - Understanding Intrinsic Motivation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="three-canvas"></canvas>
+      
+      <div class="loading-screen">
+        <div class="loader-container">
+          <div class="neuron-loader"></div>
+          <p>Initializing learning environment...</p>
+        </div>
+      </div>
+
+      <nav class="controls-panel">
+        <div class="camera-controls">
+          <button class="control-btn" data-view="overview">Overview</button>
+          <button class="control-btn" data-view="focus">Focus</button>
+          <button class="control-btn" data-view="explore">Explore</button>
+        </div>
+        <div class="visualization-controls">
+          <button class="viz-btn active" data-viz="motivation">Motivation Flow</button>
+          <button class="viz-btn" data-viz="learning">Learning Paths</button>
+          <button class="viz-btn" data-viz="cooperation">Cooperation Network</button>
+        </div>
+      </nav>
+
+      <div class="content-overlay">
+        <header class="main-header">
+          <h1>The Kohn Principle</h1>
+          <p class="tagline">Exploring the Science of Intrinsic Motivation</p>
+        </header>
+
+        <section class="intro-panel slideable-panel">
+          <button class="close-panel-btn" aria-label="Hide panel">
+            <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+          </button>
+          <div class="principle-card">
+            <h2>Beyond Behaviorism</h2>
+            <p>Alfie Kohn's groundbreaking work reveals how traditional reward systems undermine the very behaviors they seek to promote.</p>
+            <button class="research-stat clickable-stat" data-expanded="false">
+              <span class="stat-number">128+</span>
+              <span class="stat-label">Studies Analyzed</span>
+              <div class="stat-details" style="display: none;">
+                <h4>Key Research Areas</h4>
+                <ul>
+                  <li>Deci & Ryan (1985) - Self-Determination Theory</li>
+                  <li>Lepper et al. (1973) - The Undermining Effect</li>
+                  <li>Cameron & Pierce (1994) - Meta-Analysis</li>
+                  <li>Kohn's Synthesis (1993) - 128 Studies Reviewed</li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </section>
+
+        <section class="core-concepts">
+          <h2>Core Discoveries</h2>
+          <div class="concepts-grid">
+            <article class="concept-card" data-concept="intrinsic">
+              <div class="concept-icon">🧠</div>
+              <h3>Intrinsic Motivation</h3>
+              <p>Learning driven by curiosity and interest produces deeper understanding and longer retention than external rewards.</p>
+              <div class="evidence-bar" data-strength="95"></div>
+            </article>
+
+            <article class="concept-card" data-concept="autonomy">
+              <div class="concept-icon">🎯</div>
+              <h3>Autonomy</h3>
+              <p>Students who have control over their learning process show higher engagement and better problem-solving abilities.</p>
+              <div class="evidence-bar" data-strength="88"></div>
+            </article>
+
+            <article class="concept-card" data-concept="cooperation">
+              <div class="concept-icon">🤝</div>
+              <h3>Cooperation vs Competition</h3>
+              <p>Collaborative learning environments consistently outperform competitive ones in both achievement and well-being.</p>
+              <div class="evidence-bar" data-strength="92"></div>
+            </article>
+
+            <article class="concept-card" data-concept="process">
+              <div class="concept-icon">🔄</div>
+              <h3>Process Over Product</h3>
+              <p>Focusing on the learning process rather than outcomes leads to greater creativity and risk-taking.</p>
+              <div class="evidence-bar" data-strength="85"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="book-showcase">
+          <div class="book-content">
+            <h2>Punished by Rewards</h2>
+            <blockquote class="key-quote">
+              "The more we want children to want to learn, the more we have to be careful not to reduce learning to a means for obtaining something else."
+            </blockquote>
+            <div class="book-impact">
+              <h3>Revolutionary Impact</h3>
+              <ul class="impact-list">
+                <li>Transformed educational psychology</li>
+                <li>Influenced progressive education movement</li>
+                <li>Changed corporate management practices</li>
+                <li>Reshaped parenting approaches worldwide</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="interactive-demo">
+          <h2>Interactive Demonstration</h2>
+          <div class="demo-container">
+            <p>Click and drag to rotate the visualization. Scroll to zoom. Watch how intrinsic motivation flows naturally when external pressures are removed.</p>
+            <div class="demo-controls">
+              <button class="demo-btn" data-action="reset">Reset View</button>
+              <button class="demo-btn" data-action="animate">Toggle Animation</button>
+              <button class="demo-btn" data-action="particles">Toggle Particles</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="research-foundation">
+          <h2>Scientific Foundation</h2>
+          <div class="research-grid">
+            <div class="research-item">
+              <span class="year">1971</span>
+              <h4>Deci's Experiments</h4>
+              <p>First evidence that rewards reduce intrinsic motivation</p>
+            </div>
+            <div class="research-item">
+              <span class="year">1985</span>
+              <h4>Meta-Analysis</h4>
+              <p>Comprehensive review confirming the undermining effect</p>
+            </div>
+            <div class="research-item">
+              <span class="year">1993</span>
+              <h4>Punished by Rewards</h4>
+              <p>Kohn synthesizes decades of research for the public</p>
+            </div>
+            <div class="research-item">
+              <span class="year">2018</span>
+              <h4>Modern Validation</h4>
+              <p>Neuroscience confirms intrinsic motivation pathways</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="tribute-footer">
+          <h2>A Living Legacy</h2>
+          <p>Alfie Kohn's work continues to inspire educators, parents, and leaders to create environments where people can thrive through intrinsic motivation, cooperation, and authentic learning.</p>
+          <div class="footer-links">
+            <a href="https://www.alfiekohn.org" target="_blank" rel="noopener">Visit AlfieKohn.org</a>
+          </div>
+        </footer>
+      </div>
+
+      <div class="mobile-hint">
+        <p>Touch and drag to explore • Pinch to zoom</p>
+      </div>
+
+      <button class="panel-toggle-btn" aria-label="Show info panel">
+        <svg class="panel-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+        </svg>
+      </button>
+
+      <div class="music-player">
+        <button class="music-toggle" aria-label="Toggle music">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+          </svg>
+        </button>
+        <div class="music-info">
+          <span class="track-name">Ambient Learning</span>
+          <span class="track-artist">Focus Music</span>
+        </div>
+        <div class="volume-control">
+          <svg class="volume-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+          </svg>
+          <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="0.3">
+        </div>
+      </div>
+
+      <audio id="background-music" loop preload="auto" volume="0.3">
+        <!-- Will be created with Web Audio API as backup only -->
+      </audio>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
